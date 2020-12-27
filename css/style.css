@@ -35,7 +35,7 @@ header .title {
 }
 
 header .title h1 {
-  font-size: 150px;
+  font-size: 140px;
   font-weight: 500;
   letter-spacing: 0.3em;
 }
@@ -44,6 +44,20 @@ header .title p {
   font-size: 70px;
   margin-top: 30px;
   letter-spacing: 0.1em;
+}
+
+@keyframes showText {
+  0% {
+    opacity: 0;
+    transform: translateX(800px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.textAnimation span {
+  display: inline-block;
+  animation: showText 3s backwards;
 }
 
 main  {
